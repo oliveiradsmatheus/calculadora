@@ -1,20 +1,49 @@
-# Calculadora em JavaScript
-<div>
-  💻 Esta é uma atividade da disciplina de Linguagens de Programação I do curso de Ciência da Computação/FIPP.
-</div>
-<br>
-<img src="https://camo.githubusercontent.com/5f97feb6e92a0e19b11e8902d833328235ee264b4821e3167fdf11f91e31f107/687474703a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d535441545553266d6573736167653d434f4e434c5549444f26636f6c6f723d475245454e267374796c653d666f722d7468652d6261646765">
-<div>
-  <h3>Desafios</h3>
-  <ul>
-    <li><p>Desenvolvimento de uma calculadora interativa para a realização de equações simples, manipulando a árvore DOM e o controle de eventos em JavaScript.</p></li>
-    <li><p>Interface amigável construída com CSS.</p></li>
-    <li><p>Botão para seleção de tema Escuro/Claro.</p></li>
-  </ul>
-</div>
-<div>
-  <h3>Apresentação</h3>
-  <ul>
-      <img alt="calculadora" src=https://github.com/oliveiradsmatheus/calculadoraJS/blob/main/imagens/calculadora.gif?raw=true>
-  </ul>
-</div>
+## 🧠 Calculadora Interativa em JavaScript
+
+💻 **Disciplina:** Linguagens de Programação I  
+📚 **Curso:** Ciência da Computação — FIPP / UNOESTE  
+👨‍💻 **Autor:** Matheus Oliveira da Silva  
+
+---
+
+### 📖 Sobre o Projeto
+
+Este projeto consiste no desenvolvimento de uma **calculadora web interativa** capaz de realizar **equações matemáticas simples** (adição, subtração, multiplicação e divisão).
+
+O foco principal do desenvolvimento foi a **manipulação da árvore DOM** (Document Object Model) e o **controle de eventos em JavaScript** para criar uma experiência funcional e responsiva. A interface foi estilizada com **CSS** para ser amigável e esteticamente agradável.
+
+---
+
+### 🎯 Objetivos
+
+- **Manipulação DOM:** Utilizar JavaScript para ler entradas do usuário e atualizar o visor da calculadora.
+- **Controle de Eventos:** Implementar *event listeners* para processar cliques nos botões numéricos e de operação.
+- **Lógica de Cálculo:** Desenvolver funções em JavaScript para executar as operações básicas.
+- **Interface e Estilização:** Construir uma **interface amigável** utilizando **HTML** e **CSS** (Grid/Flexbox).
+- **Funcionalidade de Tema:** Incluir um botão para alternar entre os temas **Escuro** e **Claro** (*Dark/Light Mode*), demonstrando manipulação de variáveis CSS.
+
+---
+
+### ⚙️ Funcionalidades Principais
+
+- 🔢 **Operações Básicas:** Realiza Adição (`+`), Subtração (`-`), Multiplicação (`×`) e Divisão (`÷`).
+- 🧠 **Controle de Estado:** Gerenciamento do estado de cálculo (`calculado = true/false`) para permitir que novos números substituam o resultado anterior ou continuem a equação.
+- 🎨 **Seleção de Tema:** Botão para alternar entre o **Tema Escuro** (padrão) e **Tema Claro**, alterando dinamicamente as variáveis de cor CSS.
+- 🔙 **Controle de Visor:** Funções para **Limpar** (`C`) o visor e **Apagar** (`<`) o último caractere.
+
+---
+
+### 💡 Implementação da Lógica (JS)
+
+A lógica central da calculadora utiliza:
+
+1.  **Funções Separadas:** Cada operação básica (`soma`, `subtracao`, etc.) é encapsulada em sua própria função.
+2.  **Função de Orquestração (`operacao`):** Uma função genérica que recebe dois números e a função da operação a ser executada, demonstrando o uso de **funções como argumentos**.
+3.  **Processamento da Expressão (`calcular`):** A função `calcular()` percorre a string do visor, identifica o primeiro operador, separa os dois operandos (`a` e `b`) e invoca a função de operação apropriada através de um `switch`.
+4.  **Troca de Tema (`trocarTema`):** Usa `classList.toggle` e a manipulação de `root.style.setProperty` para alterar as **variáveis CSS** (custom properties), garantindo a troca de tema eficiente.
+
+---
+
+### 🖼️ Apresentação
+
+![calculadora](https://github.com/oliveiradsmatheus/calculadoraJS/blob/main/imagens/calculadora.gif?raw=true)
