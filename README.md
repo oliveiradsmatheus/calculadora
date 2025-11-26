@@ -46,4 +46,4 @@ A lógica central da calculadora utiliza:
 
 ### 🖼️ Apresentação
 
-![calculadora](https://github.com/oliveiradsmatheus/calculadoraJS/blob/main/imagens/calculadora.gif?raw=true)
+![calculadora](imagens/calculadora.gif)
